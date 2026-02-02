@@ -2,31 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="simply chocolate" />
-    <title>simply chocolate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMPLY CHOCOLATE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <nav>
         <a href="./index.html">
-          SIMPLY CHOCOLATE <img src="./images/chocolate.png" alt="logo"
+          SIMPLY CHOCOLATE
+          <img src="./images/chocolate.svg" alt="logo" width="24" height="24"
         /></a>
-        <ul>
+        <ul class="hidden">
           <li><a href="./index.html">Home</a></li>
           <li><a href="#Howitsmade?">How it's made?</a></li>
           <li><a href="#Chocolateisloved">Chocolate is loved</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="logo-list">
         <li>
-          <a href="#"><img src="./images/instagram.png" alt="instagram" /></a>
+          <a href="#"
+            ><svg
+              role="img"
+              aria-label="instagram link"
+              class="header-icons"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </li>
         <li>
-          <a href="#"><img src="./images/twitter.png" alt="twitter" /></a>
+          <a href="#"
+            ><svg
+              role="img"
+              aria-label="twitter link"
+              class="header-icons"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </header>
-    <main>
+    <main class="hidden">
       <section>
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment
@@ -195,8 +231,8 @@
         <button type="button">Leave a review</button>
       </section>
     </main>
-    <footer>
-      <h2>Chocolate a delicious cure for a bad day</h2>
+    <footer class="hidden">
+      <p>Chocolate a delicious cure for a bad day</p>
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="#Howitsmade?">How it's made?</a></li>
