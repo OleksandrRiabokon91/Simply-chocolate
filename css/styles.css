@@ -40,6 +40,8 @@ img {
 
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
 }
 
 :root {
@@ -49,7 +51,30 @@ button {
   --cream: #fcf1e0;
   --white: #fafafa;
 }
-/* for hidden elements */
+
+/* common */
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+} */
+
+/* for hidden elements styles*/
+/* ! .hidden only for dev, after - remove from css and html */
 .hidden {
   display: none;
 }
@@ -67,23 +92,46 @@ button {
   overflow: hidden;
 }
 
-/* header stils */
+/* header */
+
 .header-container {
-  width: 375px;
-  margin: 0 auto;
+  max-width: 375px;
   padding: 20px 20px 14px 20px;
-}
-nav {
-  display: flex;
-}
-.header-icons {
-  stroke: var(--black);
-  fill: transparent;
-  background-color: transparent;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
-a:focus .header-icons,
-a:hover .header-icons {
-  stroke: var(--orange);
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+}
+.logo-part {
+  font-style: italic;
+}
+.header-logo img {
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+}
+
+.burger-icon {
+  display: block;
+  color: var(--black);
 }
