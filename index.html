@@ -29,15 +29,47 @@
             <span class="logo-part">SIMPLY</span>&nbsp;CHOCOLATE
             <img src="./images/chocolate.svg" alt="logo" width="24" height="24"
           /></a>
-          <button class="burger-btn" type="button">
+          <button class="burger-btn" type="button" data-menu-open>
             <svg class="burger-icon" width="28" height="28">
               <use href="./images/icons.svg#burger-icon"></use>
             </svg>
           </button>
         </nav>
       </div>
-      <div class="mobile-menu">
-        <div class="container mobile-menu-container"></div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-x-close-white"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li><a class="mobile-nav-link activ" href="">Home</a></li>
+              <li><a class="mobile-nav-link" href="">How it`s made?</a></li>
+              <li>
+                <a class="mobile-nav-link" href="">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="soc-melia-list">
+            <li>
+              <a class="soc-media-link" target="_blank" href="">
+                <svg class="soc-media-icon" width="22" height="22">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="soc-media-link" target="_blank" href="">
+                <svg class="soc-media-icon" width="22" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="hidden">
@@ -226,5 +258,6 @@
         </ul>
       </address>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
