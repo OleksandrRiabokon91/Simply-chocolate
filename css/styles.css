@@ -98,9 +98,11 @@ button {
   padding: 20px 20px 14px 20px;
   margin: 0 auto;
 }
-nav {
+.nav-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .header-logo {
   display: flex;
@@ -143,7 +145,6 @@ nav {
     padding: 28px 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   .header-logo img {
     width: 21px;
@@ -160,12 +161,11 @@ nav {
     letter-spacing: -0.02em;
     color: var(--black);
   }
-  .nav-list {
-    margin-left: 101px;
-  }
   .soc-media-list {
     display: flex;
     gap: 18px;
+    margin-right: 0;
+    margin-left: 48px;
   }
   .soc-media-link {
     display: flex;
@@ -175,6 +175,19 @@ nav {
   .soc-media-icon {
     fill: transparent;
     stroke: var(--black);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1200px;
+  }
+  .header-logo {
+    font-size: 18px;
+    line-height: 111%;
+  }
+  .header-logo img {
+    width: 24px;
+    height: 24px;
   }
 }
 
