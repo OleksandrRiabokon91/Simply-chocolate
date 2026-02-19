@@ -25,25 +25,20 @@ a {
   text-decoration: none;
 }
 /* global */
-
 body {
-  font-family: "Roboto", sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   background-color: var(--white);
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 button {
   cursor: pointer;
   padding: 0;
   border: none;
 }
-
 :root {
   --black: #111111;
   --violet: #1e1823;
@@ -51,34 +46,28 @@ button {
   --cream: #fcf1e0;
   --white: #fafafa;
 }
-
 /* common */
-
 .container {
   max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
 }
-
 /* for hidden elements styles*/
 /* ! .hidden only for dev, after - remove from css and html */
 .hidden {
   display: none;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -91,7 +80,6 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 /* header */
 .header-container {
   max-width: 375px;
@@ -135,7 +123,6 @@ button {
 .soc-media-list {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
@@ -188,6 +175,22 @@ button {
   .header-logo img {
     width: 24px;
     height: 24px;
+  }
+  .nav-link {
+    transition: color 200ms;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--orange);
+  }
+  .soc-media-icon {
+    transition:
+      stroke 200ms,
+      scale 200ms;
+  }
+  .soc-media-icon:hover {
+    stroke: var(--orange);
+    scale: 1.1;
   }
 }
 
@@ -243,6 +246,7 @@ button {
   letter-spacing: -0.02em;
   color: var(--white);
 }
+/* ? .activ unused yet */
 .activ {
   color: var(--orange);
 }
@@ -264,4 +268,8 @@ button {
     display: none;
   }
 }
-/*  */
+/* hero */
+.hero {
+  border-radius: 30px;
+  background-color: hotpink;
+}
