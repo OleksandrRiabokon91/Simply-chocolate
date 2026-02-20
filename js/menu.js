@@ -1,12 +1,12 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-menu-open]"),
-    closeModalBtn: document.querySelector("[data-menu-close]"),
+    openBtn: document.querySelector("[data-menu-open]"),
+    closeBtn: document.querySelector("[data-menu-close]"),
     modal: document.querySelector("[data-menu]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openBtn.addEventListener("click", openMenu);
+  refs.closeBtn.addEventListener("click", closeMenu);
 
   refs.modal.addEventListener("click", (e) => {
     const link = e.target.closest('a[href^="#"]');
@@ -20,10 +20,18 @@
       targetEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    refs.modal.classList.remove("is-open");
+    closeMenu();
   });
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-open");
+  function openMenu() {
+    refs.modal.classList.add("is-open");
+    refs.modal.hidden = false;
+    refs.openBtn.setAttribute("aria-expanded", "true");
+  }
+
+  function closeMenu() {
+    refs.modal.classList.remove("is-open");
+    refs.modal.hidden = true;
+    refs.openBtn.setAttribute("aria-expanded", "false");
   }
 })();

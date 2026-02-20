@@ -31,7 +31,7 @@
           /></a>
           <ul class="nav-list">
             <li><a class="nav-link" href="./index.html">Home</a></li>
-            <li><a class="nav-link" href="#Howitsmade?">How it`s made?</a></li>
+            <li><a class="nav-link" href="#howitsmade">How it`s made?</a></li>
             <li>
               <a class="nav-link" href="#Chocolateisloved"
                 >Chocolate is loved</a
@@ -39,8 +39,21 @@
             </li>
           </ul>
 
-          <button class="burger-btn" type="button" data-menu-open>
-            <svg class="burger-icon" width="28" height="28">
+          <button
+            class="burger-btn"
+            type="button"
+            data-menu-open
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <svg
+              class="burger-icon"
+              width="28"
+              height="28"
+              aria-hidden="true"
+              focusable="false"
+            >
               <use href="./images/icons.svg#burger-icon"></use>
             </svg>
           </button>
@@ -48,14 +61,26 @@
         <ul class="soc-media-list">
           <li>
             <a class="soc-media-link" target="_blank" href="">
-              <svg class="soc-media-icon" width="24" height="24">
+              <svg
+                class="soc-media-icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+                focusable="false"
+              >
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="soc-media-link" target="_blank" href="">
-              <svg class="soc-media-icon" width="22" height="22">
+              <svg
+                class="soc-media-icon"
+                width="22"
+                height="22"
+                aria-hidden="true"
+                focusable="false"
+              >
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -63,10 +88,24 @@
         </ul>
       </div>
 
-      <div class="mobile-menu" data-menu>
+      <div id="mobile-menu" class="mobile-menu" data-menu hidden>
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close" data-menu-close>
-            <svg class="mobile-menu-close-icon" width="28" height="28">
+          <h2 id="mobile-menu-title" class="visually-hidden">
+            Mobile navigation
+          </h2>
+          <button
+            type="button"
+            class="mobile-menu-close"
+            data-menu-close
+            aria-label="Close menu"
+          >
+            <svg
+              class="mobile-menu-close-icon"
+              width="28"
+              height="28"
+              aria-hidden="true"
+              focusable="false"
+            >
               <use href="./images/icons.svg#icon-x-close-white"></use>
             </svg>
           </button>
@@ -76,9 +115,7 @@
                 <a class="mobile-nav-link activ" href="./index.html">Home</a>
               </li>
               <li>
-                <a class="mobile-nav-link" href="#Howitsmade?"
-                  >How it`s made?</a
-                >
+                <a class="mobile-nav-link" href="#howitsmade">How it`s made?</a>
               </li>
               <li>
                 <a class="mobile-nav-link" href="#Chocolateisloved"
@@ -89,15 +126,39 @@
           </nav>
           <ul class="mob-soc-media-list">
             <li>
-              <a class="mob-soc-media-link" target="_blank" href="">
-                <svg class="mob-soc-media-icon" width="22" height="22">
+              <a
+                class="mob-soc-media-link"
+                target="_blank"
+                href=""
+                rel="noopener noreferrer"
+                aria-label="Instagram (opens in new tab)"
+              >
+                <svg
+                  class="mob-soc-media-icon"
+                  width="22"
+                  height="22"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="mob-soc-media-link" target="_blank" href="">
-                <svg class="mob-soc-media-icon" width="22" height="22">
+              <a
+                class="mob-soc-media-link"
+                target="_blank"
+                href=""
+                rel="noopener noreferrer"
+                aria-label="Twitter (opens in new tab)"
+              >
+                <svg
+                  class="mob-soc-media-icon"
+                  width="22"
+                  height="22"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -108,16 +169,38 @@
     </header>
     <main>
       <section class="container hero">
-        <h1>
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#Howitsmade?">How it's made</a>
-        <a href="#scrolldown">scroll down</a>
+        <button
+          class="hero-btn-buy"
+          type="button"
+          aria-label="Buy chocolate products"
+        >
+          Buy now
+        </button>
+        <a class="hero-link-nav" href="#howitsmade">How it's made</a>
+        <a
+          class="hero-link-scroll"
+          href="#scrolldown"
+          aria-label="Scroll down to next section"
+          >scroll down
+          <span class="hero-link-scroll-icon">
+            <svg
+              class="hero-scroll-icon"
+              width="16"
+              height="16"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use href="./images/icons.svg#icon-scroll-down"></use>
+            </svg>
+          </span>
+        </a>
       </section>
       <section class="hidden" id="scrolldown">
-        <h2 hidden>fiatures</h2>
+        <h2 class="visually-hidden">Features</h2>
         <ul>
           <li>
             <h3>Unsurpassed taste</h3>
@@ -186,7 +269,7 @@
           </li>
         </ul>
       </section>
-      <section class="hidden" id="Howitsmade?">
+      <section class="hidden" id="howitsmade">
         <h2>hOW IT'S made?</h2>
         <img
           src="./images/image-1.jpg"
