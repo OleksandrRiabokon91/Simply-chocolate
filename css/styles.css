@@ -274,20 +274,27 @@ button {
   background-color: hotpink;
 }
 .hero-title {
+  padding: 395px 20px 32px;
+  /*  */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--white);
 }
+.hero-btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14px;
+  row-gap: 32px;
+  padding: 0 20px 20px;
+}
 .hero-btn-buy {
   border-radius: 100px;
   padding: 12px 28px;
   min-width: 120px;
-  height: 41px;
   background: var(--orange);
   /*  */
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
@@ -296,10 +303,8 @@ button {
   border: 1px solid var(--white);
   border-radius: 100px;
   padding: 12px 28px;
-  min-width: 159px;
-  height: 41px;
+  min-width: 120px;
   /*  */
-  /* font-family: var(--font-family); */
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
@@ -314,6 +319,10 @@ button {
   line-height: 117%;
   letter-spacing: -0.03em;
   color: var(--white);
+  /*  */
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .hero-link-scroll-icon {
   display: flex;
